@@ -1,0 +1,219 @@
+%-------------------------
+% Resume in Latex
+% Author : Daniel Slovich
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{multicol}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSkillsheading}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1}\\ {#2} 
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeSkillsHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSkillsHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Daniel Slovich} \\\vspace{3pt}
+    \small 571-991-7252 $|$ \href{mailto:danslovich@gmail.com}{{danslovich@gmail.com}} $|$ 
+    \href{https://github.com/danslovich}{{Git: github.com/danslovich}} $|$ \href{https://youtu.be/NCQFlha8_fA}{{Youtube: youtu.be/NCQFlha8\_fA}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {George Mason University}{Fairfax, VA}
+      {Bachelor of Science in Electrical Engineering}{August 2018 -- May 2021}
+    \resumeSubheading
+      {Northern Virginia Community College}{Annandale, VA}
+      {Associate of Science in Electrical Engineering}{May 2017 -- August 2018}
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Technical Skills}
+  \resumeSkillsHeadingListStart
+    \resumeSkillsheading
+      {Programming Languages}
+      {Python, C/C++, Java, VHDL, Assembly, ROS/RViz/MoveIt, XML, Bash, Lua, LaTeX}
+    \resumeSkillsheading
+      {Software Programs}
+      {Linux, MATLAB, Simulink, PSpice, Multisim, Vivado,  EAGLE, Fusion 360, Copellia Sim, Gazebo Sim}
+    \resumeSkillsheading
+      {Hardware Design Competencies}
+      {Circuit/PCB/ASIC, FPGA, Emebbed Systems, Control Systems, Robotics, Signal Processing, 3D-Printing}
+  \resumeSkillsHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Instrument Repair and Technician}{November 2015 -- December 2016}
+      {Alvas Music}{San Pedro, California}
+      \resumeItemListStart
+        \resumeItem{Developed and instated standards for customer records, instrument check-in and check-out, logging, and pricing}
+        \resumeItem{Performed repair, set-up, and modifications of customer instruments to various customer-defined specifications}
+        \resumeItem{Generated new repair income stream, and  increased customer base}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Information Technology Operations Analyst}{February 2015 -- June 2015}
+      {Red Bull}{Santa Monica, California}
+      \resumeItemListStart
+        \resumeItem{Imaged corporate employee devices and provided on site support in person, over the phone, and via email or ticket}
+        \resumeItem{Ensured proper training for users, on-boarding of new employees, handling incidents, service requests and installs}
+        \resumeItem{Provided deployment and support of Cisco, Xerox and Crestron A/V and teleconference hardware}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Genius, Service Specialist, Visuals Specialist, Sales Specialist}{February 2011 -- November 2014}
+      {Apple Inc.}{Fairfax, Virginia}
+      \resumeItemListStart
+        \resumeItem{Apple Certified Mac Technician with service qualifications in Apple computers, mobile devices, OS X and iOS}
+        \resumeItem{Performed triage and repair of computers, devices and networks in large volume appointment-based environment}
+        \resumeItem{Facilitated  and conducted company held classroom training of technicians and sales employees}
+        \resumeItem{Conducted customer training workshops on Apple products and services}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+    \resumeSubheading
+      {Subaquatic Optoelectronic Sensor}{\hspace{-0.2in}August 2020 -- June 2021}
+      {Python, MATLAB, Fusion 360, EAGLE,  Embedded Systems, SMT/Point-toPoint Solder, Optics}{}
+      \resumeItemListStart
+        \resumeItem{Top-down design of a fiberoptic based water sensor measuring sample turbidity, temperature, and salinity}
+        \resumeItem{Solely researched, designed, and modeled temperature sensor harnessing semi-conductor properties}
+        \resumeItem{Performed device design, modeling, and simulation utilizing MATLAB and PSpice}
+        \resumeItem{Designed 3D printed components for each sensor using Fusion 360}
+        \resumeItem{Designed and created all circuits, schematics, and PCB laydowns in EAGLE}
+        \resumeItem{Part of a six member team collaboration with periodic meetings and progress reporting}
+        \resumeItem{Final desktop device created with full sensing capabilities with extensive testing, calibration, and measurement completed,
+        		    recorded, and documented.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {5-DOF Robotic Arm}{January 2021 -- June 2021}
+      {Python, Gazebo/Coppellia Sim, Embedded Systems, Kinematics, Fusion, 3D Printing}{}
+      \resumeItemListStart
+        \resumeItem{Development and creation of a physical 5 degree of freedom robotic arm}
+        \resumeItem{Forward and Inverse Kinematics fully modeled in Copellia sim}
+        \resumeItem{Utilizes Dynamixel XL330 smart servos with internal position, force, and torque sensing for a closed loop design}
+        \resumeItem{Final construction completed using Arduino, printed parts, and servos with functional testing performed}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+
+%-------------------------------------------
+\end{document}
